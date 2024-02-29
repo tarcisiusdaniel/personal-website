@@ -1,0 +1,113 @@
+div.intro-outer {
+    display: flex;
+    flex-direction: row;
+    padding: 8rem 5rem;
+    height: 30rem;
+}
+
+div.intro-outer div.intro-bio {
+    width: 60%;
+}
+
+div.intro-outer div.intro-bio h1 {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    animation: slidein-vertical 1s linear calc(1);
+    animation-delay: 0ms;
+}
+
+div.intro-outer div.intro-bio p {
+    margin-top: 0rem;
+    width: 90%;
+    animation: slidein-vertical 1s linear calc(1);
+    animation-delay: 100ms;
+}
+
+div.intro-outer div.intro-info {
+    padding: 1.5rem 0;
+}
+
+div.intro-outer div.intro-info section.status{
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    justify-content: space-around;
+}
+
+div.intro-outer div.intro-info section.status span{
+    animation: slidein-vertical 1s linear calc(1);
+    animation-delay: 200ms;
+}
+
+div.intro-outer div.intro-info section.links{
+    margin: 2.5rem 0;
+}
+
+div.intro-outer div.intro-info section.links span a .links-icon{
+    animation: slidein-vertical 1s linear calc(1);
+    animation-delay: 300ms;
+}
+
+@keyframes slidein-vertical {
+    from {
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein-horizontal {
+    from {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.intro-outer div.profile-picture-section {
+    width: 40%;
+    padding: 1rem 0;
+}
+
+div.intro-outer div.profile-picture-section img.profile-picture {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    left: 50px;
+    top: 0px;
+    animation: slidein-horizontal 1s linear calc(1);
+}
+
+div.intro-outer div.profile-picture-section div.backshadow-gray {
+    width: 20rem;
+    height: 20rem;
+    background-color: #e1ede9;
+    overflow: hidden;
+    z-index: -4;
+    position: relative;
+    top: -274px;
+    left: 100px;
+    animation: slidein-horizontal 1s linear calc(1);
+}
+
+div.intro-outer div.profile-picture-section div.backshadow-white {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    animation: slidein-horizontal 1s linear calc(1);
+}
+
+
