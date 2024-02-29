@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Tarcisius' Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the repository that holds the code for my personal website. This remains serverless. So, to run it, you can try cloning this repo and run the app like how you usually runs a React project. For those of you who are not familiar, there are instructions below. Happy coding!!
 
 ## Available Scripts
 
