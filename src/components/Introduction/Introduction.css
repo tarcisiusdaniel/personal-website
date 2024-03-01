@@ -79,11 +79,21 @@ div.intro-outer div.profile-picture-section img.profile-picture {
     width: 20rem;
     height: 20rem;
     position: relative;
-    overflow: hidden;
     object-fit: cover;
+    z-index: 2;
     left: 50px;
     top: 0px;
     animation: slidein-horizontal 1s linear calc(1);
+}
+
+div.intro-outer div.profile-picture-section div.backshadow-white {
+    width: 20rem;
+    height: 20rem;
+    background-image: url('../../assets/bg-intro-bright.jpeg');
+    overflow: hidden;
+    position: relative;
+    top: -30px;
+    left: -30px;
 }
 
 div.intro-outer div.profile-picture-section div.backshadow-gray {
@@ -91,23 +101,12 @@ div.intro-outer div.profile-picture-section div.backshadow-gray {
     height: 20rem;
     background-color: #e1ede9;
     overflow: hidden;
-    z-index: -4;
+    z-index: 1;
     position: relative;
-    top: -274px;
-    left: 100px;
+    bottom: 280px;
+    left: 95px;
     animation: slidein-horizontal 1s linear calc(1);
 }
 
-div.intro-outer div.profile-picture-section div.backshadow-white {
-    width: 20rem;
-    height: 20rem;
-    background-color: white;
-    z-index: -1;
-    overflow: hidden;
-    position: relative;
-    top: -40px;
-    left: -40px;
-    animation: slidein-horizontal 1s linear calc(1);
-}
 
 

@@ -1,6 +1,13 @@
-div.about-outer {
-    display: flex;
-    flex-direction: row;
-    padding: 8rem 5rem;
-    height: 33rem;
+.school-pic {
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+}
+
+.left {
+    align-self: start;
+}
+
+.right {
+    align-self: end;
 }

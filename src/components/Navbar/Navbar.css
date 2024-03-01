@@ -2,14 +2,21 @@ div.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
+    background-color: transparent;
+    border-width: 2px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 div img.logo {
     width: 3rem;
     height: 3rem;
     animation: rotation 5s infinite linear;
-    padding: 0 4rem;
+    padding: 0.5rem 4rem;
 }
 
 @keyframes rotation {
@@ -28,3 +35,4 @@ div ul.shortcuts-options {
     justify-content: space-between;
     padding-right: 4rem;
 }
+
