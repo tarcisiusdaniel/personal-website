@@ -4,3 +4,10 @@ div.experience-outer {
     padding: 8rem 5rem;
     height: 33rem;
 }
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

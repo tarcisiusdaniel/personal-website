@@ -32,7 +32,12 @@ div ul.shortcuts-options {
     list-style-type: none;
     display: flex;
     width: 40%;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-right: 4rem;
+}
+
+div ul.shortcuts-options li {
+    font: white;
+    margin-right: 15px;
 }
 

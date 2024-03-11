@@ -4,6 +4,10 @@
     height: 12rem;
 }
 
+.about-outer {
+    background: black;
+}
+
 .left {
     align-self: start;
 }
@@ -11,3 +15,7 @@
 .right {
     align-self: end;
 }
+
+/* .headline {
+    font: 25px;
+} */

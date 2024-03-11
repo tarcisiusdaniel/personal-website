@@ -13,12 +13,14 @@ const NavButton = styled.button`
         border-radius: 50px;
         border-width: 0;
         background: transparent;
+        color: white;
     }
 
     &:hover {
         border-radius: 50px;
         border-width: 0;
         background: #e1ede9;
+        color: black;
     }
 `
 
@@ -36,27 +38,25 @@ export default function Navbar() {
         }
     }
     return (
-        <div className = "navbar">
+        <div className = "navbar" style = {{backgroundColor: 'black'}}>
             <img src = {ReactLogo} alt = "Website Logo" className = "logo"/>
             <ul className = "shortcuts-options">
                 <li>
+                    <NavButton onClick = {() => scrollToSection('intro-outer')}>Home</NavButton>
+                </li>
+                <li>
                     <NavButton onClick = {() => scrollToSection('about-outer')}>About</NavButton>
                 </li>
+                {/* <li>
+                    <NavButton onClick = {() => scrollToSection('skills-outer')}>Skills</NavButton>
+                </li> */}
                 <li>
                     <NavButton onClick = {() => scrollToSection('experience-outer')}>Experience</NavButton>
                 </li>
-                <li>
-                    <NavButton onClick = {() => scrollToSection('skills-outer')}>Skills</NavButton>
-                </li>
-                <li>
-                    <NavButton onClick = {() => scrollToSection('projects-outer')}>Projects</NavButton>
-                </li>
-                {/* The dark or bright mode switch */}
                 {/* <li>
-                    <NavButton>
-                        <BiMoon size = {'1.3rem'}/><BiSun size = {'1.3rem'}/>
-                    </NavButton>
+                    <NavButton onClick = {() => scrollToSection('projects-outer')}>Projects</NavButton>
                 </li> */}
+                {/* The dark or bright mode switch */}
                 <li>
                     <a href={ResumePDF} download = "Tarcisius_CV.pdf">
                         <NavButton>

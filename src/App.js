@@ -5,8 +5,6 @@ import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
-import styled from 'styled-components';
-import BgImg from './assets/bg-intro-bright.jpeg';
 // import { useRef } from 'react';
 
 // const BgImage = styled.div`
@@ -26,14 +24,14 @@ function App() {
 
   return (
     <>
-      <div className = "bg-image" />
+      {/* <div className = "bg-image" /> */}
       {/* fix the Navbar */}
       <Navbar /> 
       <Introduction />
       <About />
+      {/* <Skills /> */}
       <Experience />
-      <Skills />
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 }

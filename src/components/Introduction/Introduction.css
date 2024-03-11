@@ -1,12 +1,14 @@
 div.intro-outer {
     display: flex;
     flex-direction: row;
-    padding: 8rem 5rem;
-    height: 30rem;
+    padding: 14rem 5rem;
+    text-align: left;
+    height: 19rem;
 }
 
 div.intro-outer div.intro-bio {
     width: 60%;
+
 }
 
 div.intro-outer div.intro-bio h1 {
@@ -89,7 +91,8 @@ div.intro-outer div.profile-picture-section img.profile-picture {
 div.intro-outer div.profile-picture-section div.backshadow-white {
     width: 20rem;
     height: 20rem;
-    background-image: url('../../assets/bg-intro-bright.jpeg');
+    /* background-image: url('../../assets/bg-intro-bright.jpeg'); */
+    background-color: white;
     overflow: hidden;
     position: relative;
     top: -30px;
@@ -108,5 +111,27 @@ div.intro-outer div.profile-picture-section div.backshadow-gray {
     animation: slidein-horizontal 1s linear calc(1);
 }
 
+h1.typewriter {
+    align-self: left;
+    overflow: hidden; 
+    text-align: left;
+    border-right: solid black;
+    white-space: nowrap;
+    /* margin: 0 auto; */
+    /* letter-spacing: ; */
+    max-width: fit-content;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-cursor .75s step-end infinite;
+}
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% {border-color: black}
+}
 

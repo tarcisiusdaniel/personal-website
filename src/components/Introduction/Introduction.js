@@ -11,12 +11,7 @@ export default function Introduction () {
             <div className = "intro-bio">
                 <h1>Hi, I'm Daniel😁👋</h1>
                 <p>
-                    I am a Recent Graduate from Northeastern University seeking for Software Engineering position.
-                    I am focusing on Full Stack Development (React.js and Node.js) leaning more to Front End.
-                    I like to create exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
-                    I also like to solve problems using my skills in data structure and algorithms.
-                    I have been creating several websites and doing Software-related projects for 2-3 years (inside and outside studies).
-                    Regardless, I want to learn more about new things in Software as I have grown fond of it.
+                    A front end developer passionate in building accessible and user friendly website.
                 </p>
                 <div className = "intro-info">
                     <section className = "status">
