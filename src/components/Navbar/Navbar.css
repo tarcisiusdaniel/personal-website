@@ -44,7 +44,7 @@ div h1.line {
 }
 
 .anim-typewriter{
-    animation: typewriter 2s steps(16) 1s 1 normal both,
+    animation: typewriter 2s steps(16) 1 normal both,
                blinkTextCursor 800ms steps(16) infinite normal;
 }
 
