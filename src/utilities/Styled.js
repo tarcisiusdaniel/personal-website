@@ -9,8 +9,7 @@ export const OuterDiv = styled.div`
 `
 
 export const BioDiv = styled.div`
-    width: 60%;
-    align-content: center;
+    width: 70%;
     
     & h1 {
         color: ${({$fontColor}) => $fontColor};
@@ -49,7 +48,7 @@ export const InfoDiv = styled.div`
 `
 
 export const PicDiv = styled.div`
-    width: 40%;
+    width: 30%;
 
     & h1 {
         color: ${({$h1Color}) => $h1Color};

@@ -14,14 +14,14 @@ div.intro-outer div.intro-bio {
 div.intro-outer div.intro-bio h1 {
     font-size: 3rem;
     margin-bottom: 0rem;
-    animation: slidein-vertical 1s linear calc(1);
+    animation: slidein-vertical 0.75s linear calc(1);
     animation-delay: 0ms;
 }
 
 div.intro-outer div.intro-bio p {
     margin-top: 0rem;
     width: 90%;
-    animation: slidein-vertical 1s linear calc(1);
+    animation: slidein-vertical 0.75s linear calc(1);
     animation-delay: 100ms;
 }
 
@@ -37,7 +37,7 @@ div.intro-outer div.intro-info section.status{
 }
 
 div.intro-outer div.intro-info section.status span{
-    animation: slidein-vertical 1s linear calc(1);
+    animation: slidein-vertical 0.75s linear calc(1);
     animation-delay: 200ms;
 }
 
@@ -46,7 +46,7 @@ div.intro-outer div.intro-info section.links{
 }
 
 div.intro-outer div.intro-info section.links span a .links-icon{
-    animation: slidein-vertical 1s linear calc(1);
+    animation: slidein-vertical 0.75s linear calc(1);
     animation-delay: 300ms;
 }
 
@@ -85,7 +85,7 @@ div.intro-outer div.profile-picture-section img.profile-picture {
     z-index: 2;
     left: 50px;
     top: 0px;
-    animation: slidein-horizontal 1s linear calc(1);
+    animation: slidein-horizontal 0.75s linear calc(1);
 }
 
 div.intro-outer div.profile-picture-section div.backshadow-white {
@@ -108,7 +108,7 @@ div.intro-outer div.profile-picture-section div.backshadow-gray {
     position: relative;
     bottom: 280px;
     left: 95px;
-    animation: slidein-horizontal 1s linear calc(1);
+    animation: slidein-horizontal 0.75s linear calc(1);
 }
 
 h1.typewriter {
