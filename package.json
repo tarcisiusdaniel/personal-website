@@ -1,6 +1,9 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
+  "engines": {
+    "node": "17.6.0"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,10 +22,8 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "build": "react-scripts build",
     "dev": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
