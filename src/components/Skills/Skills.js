@@ -4,9 +4,9 @@ import 'react-slideshow-image/dist/styles.css';
 import './Skills.css';
 
 const SkillList = [
-    ['Java', 'Python', 'JavaScript'],
-    [ 'HTML', 'CSS', 'SQL'], 
-    ['Dart']
+    ['Java', 'Python', 'C++'],
+    ['JavaScript', 'HTML', 'CSS'], 
+    ['Dart', 'SQL']
 ];
 
 export default function Skills() {
@@ -24,7 +24,9 @@ export default function Skills() {
                         SkillList.map((skills, index) => {
                             return <div className = "slider-content" key = {index}>
                                 {skills.map((skill, ind) => {
-                                    return <p key = {ind}>Hello, World</p>
+                                    return (<div>
+                                        
+                                    </div>);
                                 })}
                             </div>
                         })

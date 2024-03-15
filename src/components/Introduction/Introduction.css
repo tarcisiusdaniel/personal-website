@@ -1,14 +1,17 @@
 div.intro-outer {
-    display: flex;
+    height: 31rem;
+    /* display: flex;
     flex-direction: row;
     padding: 14rem 5rem;
     text-align: left;
-    height: 19rem;
+    height: 19rem; */
 }
 
 div.intro-outer div.intro-bio {
     width: 60%;
-
+    padding-top: 4rem;
+    padding-left: 2rem;
+    /* padding-right: 2rem; */
 }
 
 div.intro-outer div.intro-bio h1 {
@@ -25,7 +28,9 @@ div.intro-outer div.intro-bio p {
     animation-delay: 100ms;
 }
 
+
 div.intro-outer div.intro-info {
+    width: 100%;
     padding: 1.5rem 0;
 }
 
@@ -74,7 +79,49 @@ div.intro-outer div.intro-info section.links span a .links-icon{
 
 div.intro-outer div.profile-picture-section {
     width: 40%;
-    padding: 1rem 0;
+    padding: 4.3rem 0;
+}
+
+@media only screen and (max-width: 1095px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 6%;
+    }
+}
+
+@media only screen and (max-width: 1018px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 14%;
+    }
+}
+
+@media only screen and (max-width: 832px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 22%;
+    }
+}
+
+@media only screen and (max-width: 832px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 22%;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+
+    div.intro-outer div.profile-picture-section {
+        padding-right: 26%;
+    }
 }
 
 div.intro-outer div.profile-picture-section img.profile-picture {
@@ -121,8 +168,8 @@ h1.typewriter {
     /* letter-spacing: ; */
     max-width: fit-content;
     animation:
-        typing 3.5s steps(40, end),
-        blink-cursor .75s step-end infinite;
+    typing 3.5s steps(40, end),
+    blink-cursor .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -135,3 +182,28 @@ h1.typewriter {
     50% {border-color: black}
 }
 
+@media only screen and (max-width: 700px) {
+    div.intro-outer {
+        height: 50rem;
+    }
+
+    div.intro-outer div.intro-bio {
+        padding-top: 1rem;
+        padding-left: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    div.intro-outer div.intro-info {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    div.intro-outer div.profile-picture-section {
+        /* align-items: center;
+        justify-content: center; */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -9,13 +9,13 @@ const TechUsedPerExperience = {
 
 export default function Experience() {
     return (
-        <OuterDiv $bgColor = "black" className = 'experience-outer'>
-            <PicDiv $h1Color = "white">
+        <OuterDiv $bgColor = "black" className = 'experience-outer' $columnChange = {1000} $minHeight = {25}>
+            <PicDiv $h1Color = "white" $columnChange = {1000}>
                 <AnimatedOnScroll animationIn = "fadeInLeft">
                     <h1>My Experience</h1>
                 </AnimatedOnScroll>
             </PicDiv>
-            <BioDiv $fontColor = "white">
+            <BioDiv $fontColor = "white" $columnChange = {1000}>
                 {/* first experience */}
                 <div className = "head-container">
                     <AnimatedOnScroll animationIn = "fadeInRight" animationInDelay = {100}>

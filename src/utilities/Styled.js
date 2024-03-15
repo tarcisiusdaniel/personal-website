@@ -4,13 +4,24 @@ export const OuterDiv = styled.div`
     background: ${(props) => props.$bgColor};
     display: flex;
     flex-direction: row;
-    padding: 8rem 5rem;
-    height: 31rem;
+    padding: 8rem 5%;
+    padding-left: 4rem;
+    min-height: ${(props) => props.$minHeight}rem;
+    height: fit-content;
+
+    @media only screen and (max-width: ${(props) => props.$columnChange}px) {
+        padding-top: 4rem;
+        flex-direction: column;
+    }
 `
 
 export const BioDiv = styled.div`
     width: 70%;
     
+    @media only screen and (max-width: ${({$columnChange}) => $columnChange}px) {
+        width: 93%;
+    }
+
     & h1 {
         color: ${({$fontColor}) => $fontColor};
     }
@@ -49,6 +60,11 @@ export const InfoDiv = styled.div`
 
 export const PicDiv = styled.div`
     width: 30%;
+    padding-right: 1rem;
+
+    @media only screen and (max-width: ${({$columnChange}) => $columnChange}px) {
+        width: 100%;
+    }
 
     & h1 {
         color: ${({$h1Color}) => $h1Color};

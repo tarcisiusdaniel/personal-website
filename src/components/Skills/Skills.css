@@ -7,4 +7,6 @@ div.skills-outer {
 
 .slider-content {
     height: 30rem;
+    /* display: flex-start;
+    justify-content: start; */
 }
