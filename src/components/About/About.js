@@ -1,5 +1,5 @@
 import './About.css';
-import { BioDiv, InfoDiv, OuterDiv, PicDiv } from '../../utilities/Styled';
+import { BioDiv, OuterDiv, PicDiv } from '../../utilities/Styled';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Nsc from '../../assets/nsc.png';
