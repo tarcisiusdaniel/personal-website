@@ -1,4 +1,3 @@
-import ReactLogo from '../../assets/logo192.png';
 import './Navbar.css';
 import ResumePDF from "../../assets/Tarcisius's Resume.docx.pdf";
 // import { BiMoon } from "react-icons/bi";
@@ -39,7 +38,6 @@ export default function Navbar() {
     }
     return (
         <div className = "navbar" style = {{backgroundColor: 'black'}}>
-            {/* <img src = {ReactLogo} alt = "Website Logo" className = "logo"/> */}
             <h1 className = "logo-name line anim-typewriter">Tarcisius Daniel</h1>
             <ul className = "shortcuts-options">
                 <li>
@@ -48,9 +46,9 @@ export default function Navbar() {
                 <li>
                     <NavButton onClick = {() => scrollToSection('about-outer')}>About</NavButton>
                 </li>
-                <li>
+                {/* <li>
                     <NavButton onClick = {() => scrollToSection('skills-outer')}>Skills</NavButton>
-                </li>
+                </li> */}
                 <li>
                     <NavButton onClick = {() => scrollToSection('experience-outer')}>Experience</NavButton>
                 </li>

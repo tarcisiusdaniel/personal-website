@@ -80,6 +80,8 @@ div.intro-outer div.intro-info section.links span a .links-icon{
 div.intro-outer div.profile-picture-section {
     width: 40%;
     padding: 4.3rem 0;
+    align-items: center;
+    justify-items: left;
 }
 
 @media only screen and (max-width: 1095px) {
@@ -110,15 +112,7 @@ div.intro-outer div.profile-picture-section {
     }
 }
 
-@media only screen and (max-width: 832px) {
-
-    div.intro-outer div.profile-picture-section {
-        padding-right: 22%;
-    }
-}
-
 @media only screen and (max-width: 731px) {
-
     div.intro-outer div.profile-picture-section {
         padding-right: 26%;
     }
@@ -200,10 +194,21 @@ h1.typewriter {
     }
 
     div.intro-outer div.profile-picture-section {
-        /* align-items: center;
-        justify-content: center; */
         width: 100%;
         padding: 0;
         margin: 0;
+    }
+
+    div.intro-outer div.profile-picture-section img.profile-picture {
+        left: 0;
+    }   
+
+    div.intro-outer div.profile-picture-section div.backshadow-gray {
+        left: 45px;
+    }
+
+    div.photo-backshadow-container {
+        position: relative;
+        left: 3%;
     }
 }

@@ -33,9 +33,11 @@ export default function Introduction () {
                 </div>
             </div>
             <div className = "profile-picture-section">
-                <img src = {ProfilePicture} className = "profile-picture" alt = "pictures for introduction"/>
-                <div className = "backshadow-gray">
-                    <div className = "backshadow-white" />
+                <div className = "photo-backshadow-container">
+                    <img src = {ProfilePicture} className = "profile-picture" alt = "pictures for introduction"/>
+                    <div className = "backshadow-gray">
+                        <div className = "backshadow-white" />
+                    </div>
                 </div>
             </div>
         </OuterDiv>  
