@@ -8,6 +8,7 @@ export const OuterDiv = styled.div`
     padding-left: 4rem;
     height: ${(props) => props.$minHeight}vh;
     min-height: fit-content;
+    overflow-y: hidden;
 
     @media only screen and (max-width: ${(props) => props.$columnChange}px) {
         padding-top: 4rem;
