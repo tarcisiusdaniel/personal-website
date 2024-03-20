@@ -1,12 +1,3 @@
-div.intro-outer {
-    height: 31rem;
-    /* display: flex;
-    flex-direction: row;
-    padding: 14rem 5rem;
-    text-align: left;
-    height: 19rem; */
-}
-
 div.intro-outer div.intro-bio {
     width: 60%;
     padding-top: 4rem;

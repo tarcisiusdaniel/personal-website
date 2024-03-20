@@ -7,7 +7,7 @@ import './Introduction.css';
 
 export default function Introduction () {
     return (
-        <OuterDiv $bg = 'white' className = 'intro-outer' $columnChange = {700} $minHeight = {31}>
+        <OuterDiv $bg = 'white' className = 'intro-outer' $columnChange = {700} $minHeight = {72}>
             <div className = "intro-bio">
                 <h1>Hi, I'm Daniel😁👋</h1><br/>
                 <p>

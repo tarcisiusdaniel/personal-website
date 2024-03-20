@@ -6,12 +6,13 @@ export const OuterDiv = styled.div`
     flex-direction: row;
     padding: 8rem 5%;
     padding-left: 4rem;
-    min-height: ${(props) => props.$minHeight}rem;
-    height: fit-content;
+    height: ${(props) => props.$minHeight}vh;
+    min-height: fit-content;
 
     @media only screen and (max-width: ${(props) => props.$columnChange}px) {
         padding-top: 4rem;
         flex-direction: column;
+        height: 100%;
     }
 `
 

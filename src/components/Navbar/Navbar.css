@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 div.navbar {
     display: flex;
@@ -34,13 +35,13 @@ div h1.logo-name {
 div h1.line {
     position: relative;
     height: 32%;
-    width: 30%;
+    width: 32%;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
+    font-size: 175%;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateX(0);    
+    transform: translateX(10px);    
 }
 
 .anim-typewriter{
@@ -49,8 +50,8 @@ div h1.line {
 }
 
 @keyframes typewriter{
-    from{width: 0rem;}
-    to{width: 15.6rem;}
+    from{width: 0;}
+    to{width: 15.25rem;}
 }
 @keyframes blinkTextCursor{
     from{border-right-color: rgba(255,255,255,.75);}

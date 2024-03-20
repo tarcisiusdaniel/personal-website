@@ -11,7 +11,7 @@ const SkillList = [
 
 export default function Skills() {
     return (
-        <OuterDiv $bgColor = "white" className = "skills-outer">
+        <OuterDiv $bg = 'white' className = 'skills-outer' $columnChange = {700} $minHeight = {72}>
             <PicDiv $fontColor = "white">
                 <h1>My skills</h1>
             </PicDiv>
