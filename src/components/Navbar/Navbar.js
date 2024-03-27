@@ -46,9 +46,9 @@ export default function Navbar() {
                 <li>
                     <NavButton onClick = {() => scrollToSection('about-outer')}>About</NavButton>
                 </li>
-                <li>
+                {/* <li>
                     <NavButton onClick = {() => scrollToSection('skills-outer')}>Skills</NavButton>
-                </li>
+                </li> */}
                 <li>
                     <NavButton onClick = {() => scrollToSection('experience-outer')}>Experience</NavButton>
                 </li>
