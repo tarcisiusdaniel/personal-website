@@ -22,7 +22,7 @@ export default function Experience() {
                         <p className = "headline">Front-End Developer Intern, Relaymile</p>
                     </AnimatedOnScroll>
                     <AnimatedOnScroll animationIn = "fadeInRight" animationInDelay = {500}>
-                        <p className = "date">Mar 2021 - June 2021</p>
+                        <p className = "date">Mar 2021 - Jun 2021</p>
                     </AnimatedOnScroll>
                 </div>
                 
@@ -61,7 +61,7 @@ export default function Experience() {
                         <p className = "headline">Front-End Developer Intern, Telkom Indonesia</p>
                     </AnimatedOnScroll>
                     <AnimatedOnScroll animationIn = "fadeInRight" animationInDelay = {500}>
-                        <p className = "date">June 2019 - Sept 2019</p>
+                        <p className = "date">Jun 2019 - Sep 2019</p>
                     </AnimatedOnScroll>
                 </div>
                 <ul>
