@@ -13,7 +13,7 @@ div.navbar {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 5;
 }
 
 div img.logo {
@@ -28,7 +28,7 @@ div h1.logo-name {
     /* align-self: center; */
     padding-bottom: 0.5rem;
     /* padding-left: 4.5rem; */
-    margin-left: 4.5rem;
+    margin-left: min(4.5rem, 2.5%);
     font-family: 'Anonymous Pro'; 
 }
 
@@ -67,16 +67,26 @@ div h1.line {
     }
 }
 
-div ul.shortcuts-options {
+div ul.shortcuts-options-navbar {
     list-style-type: none;
     display: flex;
-    width: 40%;
+    width: 55%;
     justify-content: flex-end;
-    padding-right: 4rem;
+    padding-right: min(4rem, 2.5%);
 }
 
-div ul.shortcuts-options li {
+div ul.shortcuts-options-navbar li {
     font: white;
     margin-right: 15px;
+}
+
+.menu-icon-clickable {
+    background-color: transparent;
+    border: none;
+    margin-right: 2.5%;
+}
+
+.menu-icon {
+    width: 25px;
 }
 

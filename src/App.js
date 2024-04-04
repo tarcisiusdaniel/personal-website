@@ -4,7 +4,7 @@ import Introduction from './components/Introduction/Introduction';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Skills from './components/Skills/Skills';
-// import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Projects';
 // import { useState, useEffect } from 'react';
 
 // const BgImage = styled.div`
@@ -55,9 +55,9 @@ function App() {
       <Navbar /> 
       <Introduction />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 }

@@ -11,7 +11,7 @@ const schools = [Nsc, Uwb, Neu];
 
 export default function About() {
     return (
-        <OuterDiv className = "about-outer" $bgColor = "black" $columnChange = {600} $minHeight = {72}>
+        <OuterDiv className = "about-outer" $bgColor = "black" $columnChange = {600} $minHeight = {73}>
             <PicDiv $h1Color = "white" $columnChange = {600}>
                 {/* {
                     schools.map((school, index) => {

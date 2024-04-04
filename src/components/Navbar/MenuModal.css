@@ -1,0 +1,37 @@
+.menu-modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-modal {
+    position: relative;
+    right: 0;
+    top: 0;
+    background:black;
+    padding-top: 5rem;
+    width: 20rem;
+    height: 100vh;
+}
+
+ul.shortcuts-options-modal {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+/* ul.shortcuts-options-modal li {
+    background: yellow;
+} */
+
+/* ul.shortcuts-options-modal li:hover {
+    background: yellow;
+} */

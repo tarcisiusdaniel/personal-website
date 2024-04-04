@@ -13,6 +13,7 @@ export const OuterDiv = styled.div`
     @media only screen and (max-width: ${(props) => props.$columnChange}px) {
         padding-top: 4rem;
         flex-direction: column;
+        min-height: 80vh;
         height: 100%;
     }
 `

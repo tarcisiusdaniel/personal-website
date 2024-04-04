@@ -1,69 +1,61 @@
 import './Navbar.css';
-import ResumePDF from "../../assets/Tarcisius's Resume.docx.pdf";
 // import { BiMoon } from "react-icons/bi";
 // import { BiSun } from "react-icons/bi";
-import styled from 'styled-components';
-import React from 'react';
-
-const NavButton = styled.button`
-    & {
-        width: 100%;
-        height: 2rem;
-        border-radius: 50px;
-        border-width: 0;
-        background: transparent;
-        color: white;
-    }
-
-    &:hover {
-        border-radius: 50px;
-        border-width: 0;
-        background: #e1ede9;
-        color: black;
-    }
-`
+import React, { useEffect, useState } from 'react';
+import MenuIcon from '../../assets/menu-icon.png';
+import MenuModal from './MenuModal';
+import Sections from './Sections';
 
 export default function Navbar() {
-    function scrollToSection(elementClass) {
-        let section = document.getElementsByClassName(elementClass);
-        if (section) {
-            console.log(section[0].offsetTop);
-            const offsetTop = section[0].offsetTop;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth',
-                
-            });
-        }
+    const [screenDimension, setScreenDimension] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    const [showModal, setShowModal] = useState(false);
+
+    function handleToggleModal() {
+        setShowModal(prevShowModal => !prevShowModal);
+        console.log(showModal);
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenDimension({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            })
+        }
+
+        // if (showModal && screenDimension.width > 900) {
+        //     const handleModalToggling = () => {
+        //         handleToggleModal();
+        //     }
+        // }
+        
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
+    
+
     return (
         <div className = "navbar" style = {{backgroundColor: 'black'}}>
             <h1 className = "logo-name line anim-typewriter">Tarcisius Daniel</h1>
-            <ul className = "shortcuts-options">
-                <li>
-                    <NavButton onClick = {() => scrollToSection('intro-outer')}>Home</NavButton>
-                </li>
-                <li>
-                    <NavButton onClick = {() => scrollToSection('about-outer')}>About</NavButton>
-                </li>
-                {/* <li>
-                    <NavButton onClick = {() => scrollToSection('skills-outer')}>Skills</NavButton>
-                </li> */}
-                <li>
-                    <NavButton onClick = {() => scrollToSection('experience-outer')}>Experience</NavButton>
-                </li>
-                {/* <li>
-                    <NavButton onClick = {() => scrollToSection('projects-outer')}>Projects</NavButton>
-                </li> */}
-                {/* The dark or bright mode switch */}
-                <li>
-                    <a href={ResumePDF} download = "Tarcisius_CV.pdf">
-                        <NavButton>
-                            Download CV
-                        </NavButton>
-                    </a>
-                </li>
-            </ul>   
+            {screenDimension.width > 900 ?
+            <Sections className = "shortcuts-options-navbar" parentSection = "navbar"/>
+            :
+            <button className = "menu-icon-clickable" onClick = {handleToggleModal}>
+                <img src = {MenuIcon} className = "menu-icon"/>
+            </button>
+            
+            }
+            {
+                showModal && <MenuModal handleToggleModal = {handleToggleModal}/>
+            }
         </div>
     );
 }

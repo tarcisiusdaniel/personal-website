@@ -168,9 +168,9 @@ h1.typewriter {
 }
 
 @media only screen and (max-width: 700px) {
-    div.intro-outer {
-        height: 50rem;
-    }
+    /* div.intro-outer {
+        
+    } */
 
     div.intro-outer div.intro-bio {
         padding-top: 1rem;
@@ -199,6 +199,7 @@ h1.typewriter {
     }
 
     div.photo-backshadow-container {
+        height: 35vh;
         position: relative;
         left: 3%;
     }
