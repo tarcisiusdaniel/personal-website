@@ -55,9 +55,9 @@ function App() {
       <Navbar /> 
       <Introduction />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 }

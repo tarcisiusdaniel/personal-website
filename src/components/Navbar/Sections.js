@@ -41,15 +41,15 @@ export default function Sections({className, parentSection}) {
             <li>
                 <NavButton onClick = {() => scrollToSection('about-outer')} $parentSection = {parentSection}>About</NavButton>
             </li>
-            <li>
+            {/* <li>
                 <NavButton onClick = {() => scrollToSection('skills-outer')} $parentSection = {parentSection}>Skills</NavButton>
-            </li>
+            </li> */}
             <li>
                 <NavButton onClick = {() => scrollToSection('experience-outer')} $parentSection = {parentSection}>Experience</NavButton>
             </li>
-            <li>
+            {/* <li>
                 <NavButton onClick = {() => scrollToSection('projects-outer')} $parentSection = {parentSection}>Projects</NavButton>
-            </li>
+            </li> */}
             {/* The dark or bright mode switch */}
             <li>
                 <a href={ResumePDF} download = "Tarcisius_CV.pdf">
