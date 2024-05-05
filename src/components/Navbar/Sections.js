@@ -1,4 +1,4 @@
-import ResumePDF from "../../assets/Tarcisius's Resume.docx.pdf";
+import ResumePDF from "../../assets/Tarcisius Resume.pdf";
 import styled from 'styled-components';
 
 const NavButton = styled.button`
