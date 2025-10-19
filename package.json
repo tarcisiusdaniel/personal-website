@@ -1,7 +1,6 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://tarcisius-hartanto.github.io/personal-website",
   "engines": {
     "node": ">=17.6.0"
   },
