@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://www.tarcisiusdaniel.com/personal-website",
+  "homepage": "https://www.tarcisiusdaniel.com",
   "engines": {
     "node": ">=17.6.0"
   },
